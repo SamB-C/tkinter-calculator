@@ -1,6 +1,5 @@
 from tkinter import END
-
-from pandas import array
+from math import sin, cos, tan, radians
 
 def clear(display_to_clear, *lists_to_clear):
     display_to_clear.delete(0, END)

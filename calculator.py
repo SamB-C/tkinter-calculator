@@ -61,6 +61,14 @@ def main():
     button_multiply.grid(row=4, column=3)
     button_divide.grid(row=5, column=3)
 
+    button_sin = Button(root, text='sin', command=get_command('sin'), **regular_button_design)
+    button_cos = Button(root, text='cos', command=get_command('cos'), **regular_button_design)
+    button_tan = Button(root, text='tan', command=get_command('tan'), **regular_button_design)
+    button_radians = Button(root, text='radians', command=get_command('radians'), **regular_button_design)
+    button_sin.grid(row=6, column=0)
+    button_cos.grid(row=6, column=1)
+    button_tan.grid(row=6, column=2)
+    button_radians.grid(row=6, column=3)
 
     root.mainloop()
 
