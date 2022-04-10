@@ -25,7 +25,7 @@ def button_clicked(item_selected, display, evaluation_expression=evaluation_expr
         evaluation_expression.append(alternate_displays[item_selected])
         append_and_display(item_selected, expression_to_display, display)
     elif item_selected == '=':
-        total = str(eval(''.join(evaluation_expression)))
+        total = str(eval(''.join(evaluation_expression), {"__builtins__": {}, 'sin': sin, 'cos': cos, 'tan': tan, 'radians': radians}))
         clear(display, evaluation_expression, expression_to_display)
         evaluation_expression.append(total)
         append_and_display(total, expression_to_display, display)

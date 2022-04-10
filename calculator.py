@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Button, Entry
 from eval_commands import button_clicked
 
 def main():
